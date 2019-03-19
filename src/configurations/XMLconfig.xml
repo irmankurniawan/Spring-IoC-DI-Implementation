@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:property-placeholder location="classpath:/configurations/carpedia.properties"/>
+	
+	
+	<bean id="currentRarity" class="id.irman.spring.trafficpanic.carpedia.classes.rarity.Epic">
+	</bean>
+
+    <bean id="myCar" class="id.irman.spring.trafficpanic.carpedia.classes.car.BlueCar">
+    	<constructor-arg ref="currentRarity"/>
+    </bean>
+    
+    <bean id="myYellowCar" class="id.irman.spring.trafficpanic.carpedia.classes.car.YellowCar">
+    	<property name="rarity" ref="currentRarity"></property>
+    	
+    	<property name="chance" value="${prop.chance}"></property>
+    	<property name="value" value="${prop.value}"></property>
+    </bean>
+    
+</beans>
