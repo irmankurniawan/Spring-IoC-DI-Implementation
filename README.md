@@ -3,6 +3,11 @@
 
 Penerapan Konsep Konfigurasi Spring berbasis XML, Annotation, dan Java Configuration.
 
+### Main App
+`/src/id/irman/spring/trafficpanic/carpedia/main`
+
+----------------
+
 ### XML
 Kelas Car yang digunakan pada main program berbasis XML yaitu kelas BlueCar dan YellowCar.
 
@@ -17,6 +22,8 @@ Kelas Rarity yang digunakan yaitu kelas Legendary.
 Kelas Car yang digunakan pada main program berbasis Java Configuration yaitu IndigoCar.
 
 Kelas Rarity yang digunakan yaitu kelas Common dan Rare.
+
+----------------
 
 ```Text
 Nama  : Irman Kurniawan
